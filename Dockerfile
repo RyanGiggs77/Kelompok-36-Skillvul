@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y build-essential \
     && apt-get install -y curl wget git
 
 # Setel direktori kerja di dalam kontainer
-WORKDIR /app
+WORKDIR /
 
 # Salin seluruh konten dari direktori saat ini ke dalam direktori /app di dalam kontainer
 COPY . .
